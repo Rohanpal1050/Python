@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+<h2>Source_Code</h2>
+<textarea id="code">
+    percentage=float(input("Enter Your Percentage:"))
+    if(percentage<0 or percentage>100):
+        print("Invalid percentage. Please enter a value between 0 and 100.")
+    elif percentage >= 90:
+        print("Your obtained grade is A")
+    elif percentage >= 80:
+        print("Your obtained grade is B")
+    elif percentage >= 70:
+        print("Your obtained grade is C")
+    elif percentage >= 60:
+        print("Your obtained grade is D")
+    elif percentage >= 40:
+        print("Your obtained grade is E")
+    elif percentage < 40:
+        print("Your obtained grade is F")
+</textarea>
+<button onclick="myFunction()">Copy text</button>
+<script src="script.js"></script>
+</body>
+</html>

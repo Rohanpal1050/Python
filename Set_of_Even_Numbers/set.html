@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>SET OF EVEN NUMBER FROM A LIST</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+<h2>Source_Code</h2>
+<textarea id="code">
+    def filter_even_numbers(input_set):
+    even_set = {num for num in input_set if num % 2 == 0}
+    return even_set
+user_input = input("Enter a set of integers separated by spaces: ")
+input_set = set(map(int, user_input.split()))
+even_numbers_set = filter_even_numbers(input_set)
+print(f"The set of even numbers is: {even_numbers_set}")
+</textarea>
+<button onclick="myFunction()">Copy text</button>
+<script src="script.js"></script>
+</body>
+</html>

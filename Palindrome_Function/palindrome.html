@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <title>FIBONACCI SERIES</title>
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+    <body>
+    <h2>Source_Code</h2>
+    <textarea id="code">
+        def is_palindrome(number):
+        num_str = str(number)
+        reversed_str = num_str[::-1]
+        return num_str == reversed_str
+    num = int(input("Enter a number to check if it is a palindrome: "))
+    if is_palindrome(num):
+        print(num,"is a palindrome.")
+    else:
+        print(num,"is not a palindrome.") 
+    </textarea>
+    <button onclick="myFunction()">Copy text</button>
+    <script src="script.js"></script>
+    </body>
+    </html>

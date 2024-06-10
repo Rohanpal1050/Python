@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>SET OF EVEN NUMBER FROM A LIST</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+<h2>Source_Code</h2>
+<textarea id="code">
+    def filter_odd_keys(input_dict):
+    odd_keys_dict = {key: value for key, value in input_dict.items() if key % 2 != 0}
+    return odd_keys_dict
+user_input = input("Enter a dictionary (key:value pairs separated by commas, e.g., 1:10,2:20,3:30): ")
+input_dict = dict(map(lambda item: (int(item.split(':')[0]), int(item.split(':')[1])), user_input.split(',')))
+odd_keys_dict = filter_odd_keys(input_dict)
+print(f"The dictionary with odd keys is: {odd_keys_dict}")
+</textarea>
+<button onclick="myFunction()">Copy text</button>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>1+3+5+...+n Series</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+<h2>Source_Code</h2>
+<textarea id="code">
+    n = int(input("Enter the number of terms: "))
+    sum_series = 0
+    term = 1
+    for i in range(n):
+        sum_series += term
+        term += 2 
+    print("The sum of the series is:", sum_series)
+</textarea>
+<button onclick="myFunction()">Copy text</button>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>VOWEL FINDER</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+<h2>Source_Code</h2>
+<textarea id="code">
+    def count_vowels(input_string):
+    vowels = "aeiouAEIOU"
+    vowel_count = 0
+    for char in input_string:
+        if char in vowels:
+            vowel_count += 1
+    return vowel_count
+user_input = input("Enter a string: ")
+vowel_count = count_vowels(user_input)
+print("The number of vowels in the string is: ",vowel_count)
+</textarea>
+<button onclick="myFunction()">Copy text</button>
+<script src="script.js"></script>
+</body>
+</html>
